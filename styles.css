@@ -16,7 +16,7 @@ footer{
 width: 35px;
 padding: 5px;
 border: 0;
-box-shadow: 0;
+box-shadow: none;
 display: inline;
 clear: both;
 }
@@ -38,4 +38,7 @@ html, body, .container {
   background: #e3e3e3;
   margin-bottom: 10px;
   padding-bottom: 30px;
+}
+iframe{ 
+border:0px;
 }
