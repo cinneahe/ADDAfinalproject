@@ -9,13 +9,17 @@
     <meta name="keywords" content="HTML,CSS">
     <title>CAI THOMAS | Contact </title>
 
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 
   </head>
   
-        <!-- Fixed navbar -->
+    <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -35,36 +39,57 @@
 <body>
 
     <h1>Cai Thomas</h1>
-  <center> <div id="share-buttons"> 
+
+
+<!--Email Submission Form-->
+<div class="col-md-6 col-md-offset-3">
+<form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-default">
+        </div>
+    </div>
+</form>
+</div>
+  
+
+</body>
+
+<footer>
+<div id="share-buttons"> 
 <!-- Facebook -->
 <a href="https://www.facebook.com/cai.thomas.77" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
 <!-- Twitter -->
 <a href="https://twitter.com/aspire4gr8ness" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
 <!-- Email -->
-<a href="mailto:caifly32@gmail.com"><img src="http://www.simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a>
-</div> </center>
-<br>
-
-<!--Email Submission Form-->
-<div class="col-md-8">
-<h3>Contact Cai:</h3>
-
-  <form action="MAILTO:thomasic@bc.edu" method="post" enctype="text/plain">
-  Name:<br>
-  <input type="text" name="name" value="Your Name"><br>
-  E-mail:<br>
-  <input type="text" name="mail" value="Your Email"><br>
-  Message:<br>
-  <input type="text" name="comment" value="Message" size="50"><br><br>
-  <input type="submit" value="Send">
-  <input type="reset" value="Reset">
-  </form>
+<a href="mailto:thomasic@bc.edu"><img src="http://www.simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a>
 </div>
-
-</body>
-
-<footer>
-  <p>&copy;Cai Thomas 2015.<br>Built by cinneahe.</p>
+</div>
+<p> &copy;Cai Thomas 2015.<br>Built by cinneahe.</p>
 </footer>
 
 </html>
